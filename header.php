@@ -25,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'climate-critters' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header red">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -38,11 +38,7 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$climate_critters_description = get_bloginfo( 'description', 'display' );
-			if ( $climate_critters_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $climate_critters_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+		?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
