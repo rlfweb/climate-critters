@@ -1,3 +1,183 @@
-.red {
-  background-color: red;
+@font-face {
+  font-family: "Wide Latin", serif;
+  src: url(/css/Wide-Latin-Regular.ttf);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4b586a;
+}
+
+.container {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* -------  HEADER ------- */
+
+.site-header {
+  background-color: #c4e601;
+}
+
+.site-title {
+  font-family: "Wide Latin";
+  font-size: 48px;
+  color: red;
+  text-decoration: none !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* -------  FOOTER ------- */
+
+.site-footer {
+  background-color: #c4e601;
+}
+
+.social-links img {
+  max-width: 40px;
+  height: auto;
+}
+
+/* -------  NAV ------- */
+
+/* Links
+--------------------------------------------- */
+a {
+  color: #4b586a;
+}
+
+a:visited {
+  color: #4b586a;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #4b586a;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* Navigation - unchanged sstyles from underscores.me
+--------------------------------------------- */
+.main-navigation {
+  display: block;
+  width: 100%;
+}
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  display: block;
+  left: auto;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation ul {
+    display: flex;
+  }
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  flex: 1 0 50%;
 }

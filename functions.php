@@ -143,8 +143,14 @@ function climate_critters_scripts() {
 	wp_enqueue_style( 'climate-critters-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'climate-critters-style', 'rtl', 'replace' );
 
+	// RLF - load base.css
+	wp_enqueue_style( 'climate-critters-base',  get_template_directory_uri() . '/css/base.css');
+	
 	// RLF - load custom.css
 	wp_enqueue_style( 'climate-critters-custom',  get_template_directory_uri() . '/css/custom.css');
+
+	// RLF - load tachyons.css
+	wp_enqueue_style( 'climate-critters-tachyons',  get_template_directory_uri() . '/css/tachyons.css');
 
 	wp_enqueue_script( 'climate-critters-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
