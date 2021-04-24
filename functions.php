@@ -187,6 +187,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// RLF - Register Custom Post Type - Home Statement
+function add_home_statement() {
+	$labels = array(
+		'name'                  => _x( 'Home-statement', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Home-statement', 'Post Type Singular Name' ), 
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category' ),
+		'public'                => true,
+		'has_archive' 					=> true,
+	);
+	register_post_type( 'home-statement', $args );
+}
+add_action( 'init', 'add_home_statement', 0 );
+
+
 // RLF - Removes "Category:" from page titles
 function prefix_category_title( $title ) {
 	if ( is_category() ) {
