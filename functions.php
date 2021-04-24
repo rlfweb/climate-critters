@@ -204,6 +204,23 @@ function add_home_statement() {
 add_action( 'init', 'add_home_statement', 0 );
 
 
+// RLF - Register Custom Post Type - Home Subhead
+function add_home_subhead() {
+	$labels = array(
+		'name'                  => _x( 'Home-subhead', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Home-subhead', 'Post Type Singular Name' ), 
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category' ),
+		'public'                => true,
+		'has_archive' 					=> true,
+	);
+	register_post_type( 'home-subhead', $args );
+}
+add_action( 'init', 'add_home_subhead', 0 );
+
+
 // RLF - Removes "Category:" from page titles
 function prefix_category_title( $title ) {
 	if ( is_category() ) {
