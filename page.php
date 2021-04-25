@@ -17,19 +17,44 @@ get_header();
 
 	<main id="primary" class="site-main container">
 
-		<?php
+	<!-- THE CONTENT -->
+	<?php
 		while ( have_posts() ) :
 			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
+			get_template_part( 'template-parts/content', get_post_type() );
 		endwhile; // End of the loop.
-		?>
+	?>
+	
+	<!-- CUSTOM FIELDS CONTENT -->
+
+	<div class="entry-content">
+
+<!-- if we have some flexible content, let’s loop through it -->
+<?php if( have_rows('content') ): while ( have_rows('content') ) : the_row(); 
+
+if( get_row_layout() == 'text' ): ?>
+ <?php get_template_part( 'template-parts/content-text' ); ?>
+	 
+<!-- if there's a gallery component, get it -->
+<?php elseif (get_row_layout() == 'gallery' ): ?>
+	<?php get_template_part( 'template-parts/content-gallery' ); ?>
+
+		<!-- if it’s a video or audio component, show us them -->
+		<?php elseif( get_row_layout() == 'video-audio' ): ?>
+			<?php get_template_part( 'template-parts/content-video' ); ?>
+
+			<!-- if it’s a donate component, show it -->
+		<?php elseif( get_row_layout() == 'donate' ): ?>
+			<?php get_template_part( 'template-parts/content-donate' ); ?>
+
+			<!-- if it’s a caption component, show us them -->
+			<?php elseif( get_row_layout() == 'caption' ): ?>
+				<?php get_template_part( 'template-parts/content-caption' ); ?>
+
+	<?php endif; 
+endwhile; endif; ?>
+
+	</div><!-- .entry-content -->
 
 	</main><!-- #main -->
 

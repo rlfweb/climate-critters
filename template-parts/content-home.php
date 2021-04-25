@@ -73,6 +73,9 @@ endif;
 <h1>COP26 2021 UN Climate Change Conference</h1>
 <h1>1–12 Nov 2021 </h1>
 
+<!-- Countdown -->
+<?php echo do_shortcode('[wpcdt-countdown id="50"]'); ?>
+
 
 <div>FIGHT GLOBAL WARMING</div>
 <div>STOP POLLUTION</div> 
