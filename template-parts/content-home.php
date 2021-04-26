@@ -15,27 +15,28 @@
 
 <h1>Welcome!</h1>
 
-<!-- HOME-SUBHEAD TEXT -->
-	<!-- Query for page-subhead custom post type and get the correct post by category -->
-		<?php query_posts(
-			'posts_per_page=1
-			&post_type=home-subhead'
-		); ?>
+<!-- SUBHEADING TEXT -->
+<?php 
+$args = array (
+  'posts_per_page' => 1,
+  'post_type' => 'subheading',
+  'category_name' => 'home',
+  )
+?>
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php $query = new WP_Query( $args ); ?>
+ 
+<!-- The Loop -->
+<?php
+if ( $query->have_posts() ): 
+    while ( $query->have_posts() ):
+        $query->the_post(); ?>
+        <h2><?php the_content();?></h2>
+<?php endwhile; endif; ?>
 
-	<!-- Home Subhead -->
-		<div class="home-subhead" id="statement">	
-				<div class="home-subhead">
-					<?php the_content(); ?>
-				</div>
-			</div>	
-
-		<?php 
-		endwhile;
-		endif; 
-		?>
-<!-- END - HOME-SUBHEAD TEXT -->
+<!-- Restore original Post Data -->
+<?php wp_reset_postdata(); ?>
+<!-- END - SUBHEADING TEXT -->
 
 </header><!-- .entry-header -->
 

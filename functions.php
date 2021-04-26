@@ -204,11 +204,11 @@ function add_home_statement() {
 add_action( 'init', 'add_home_statement', 0 );
 
 
-// RLF - Register Custom Post Type - Home Subhead
-function add_home_subhead() {
+// RLF - Register Custom Post Type - Sub-heading
+function add_subheading() {
 	$labels = array(
-		'name'                  => _x( 'Home-subhead', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Home-subhead', 'Post Type Singular Name' ), 
+		'name'                  => _x( 'Subheading', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Subheading', 'Post Type Singular Name' ), 
 	);
 	$args = array(
 		'labels'                => $labels,
@@ -216,26 +216,9 @@ function add_home_subhead() {
 		'public'                => true,
 		'has_archive' 					=> true,
 	);
-	register_post_type( 'home-subhead', $args );
+	register_post_type( 'subheading', $args );
 }
-add_action( 'init', 'add_home_subhead', 0 );
-
-
-// RLF - Register Custom Post Type - Updates Subhead
-function add_updates_subhead() {
-	$labels = array(
-		'name'                  => _x( 'Updates-subhead', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Updates-subhead', 'Post Type Singular Name' ), 
-	);
-	$args = array(
-		'labels'                => $labels,
-		'taxonomies'            => array( 'category' ),
-		'public'                => true,
-		'has_archive' 					=> true,
-	);
-	register_post_type( 'updates-subhead', $args );
-}
-add_action( 'init', 'add_updates_subhead', 0 );
+add_action( 'init', 'add_subheading', 0 );
 
 
 // RLF - Removes "Category:" from page titles
