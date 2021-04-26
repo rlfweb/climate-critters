@@ -77,7 +77,7 @@ if ( $query->have_posts() ):
 
 <!-- Home Statement -->
 <div class="statement" id="statement">	
-		<div class="home-statement pv5 tc f3">
+		<div class="home-statement pv4 tc f3">
 			<?php the_content(); ?>
 		</div>
 	</div>	
@@ -89,7 +89,7 @@ endif;
 <!-- END - HOME-STATEMENT TEXT -->
 
 
-<h1 class="f2 b mb0">Join us now!</h1>
+<h1 class="f2 b pv3">Join us now!</h1>
 
 <!-- BUTTON BLOCK -->
 <div class="button-block flex flex-row justify-around">
@@ -120,7 +120,7 @@ endif;
 
 
 <h1 class="f2 b mb0">COP26 2021 UN Climate Change Conference</h1>
-<h1 class="f2 b mv0">1–12 Nov 2021 </h1>
+<h1 class="f2 b mv0">1–12 November 2021 </h1>
 
 <!-- Countdown -->
 <?php echo do_shortcode('[wpcdt-countdown id="50"]'); ?>

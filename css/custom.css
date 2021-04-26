@@ -284,6 +284,7 @@ a:active {
 /* DONATE */
 
 .button-block-button {
+  font-weight: 500;
   border: none;
   width: 300px;
   height: 150px;
