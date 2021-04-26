@@ -221,6 +221,23 @@ function add_home_subhead() {
 add_action( 'init', 'add_home_subhead', 0 );
 
 
+// RLF - Register Custom Post Type - Updates Subhead
+function add_updates_subhead() {
+	$labels = array(
+		'name'                  => _x( 'Updates-subhead', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Updates-subhead', 'Post Type Singular Name' ), 
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category' ),
+		'public'                => true,
+		'has_archive' 					=> true,
+	);
+	register_post_type( 'updates-subhead', $args );
+}
+add_action( 'init', 'add_updates_subhead', 0 );
+
+
 // RLF - Removes "Category:" from page titles
 function prefix_category_title( $title ) {
 	if ( is_category() ) {

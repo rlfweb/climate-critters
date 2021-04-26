@@ -31,12 +31,14 @@ p {
   margin-right: auto;
   margin-left: auto;
   max-width: 30em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
-h1.entry-title {
+.page-title,
+.entry-header h1 {
   font-size: 60px;
   text-align: center;
+  padding-bottom: 36px;
 }
 
 h2 {
@@ -81,6 +83,7 @@ img {
 --------------------------------------------- */
 a {
   color: #4b586a;
+  text-decoration: none;
 }
 
 a:visited {
@@ -102,7 +105,7 @@ a:active {
   outline: 0;
 }
 
-/* Navigation - unchanged sstyles from underscores.me
+/* Responsive Navigation - unchanged styles from underscores.me
 --------------------------------------------- */
 .main-navigation {
   display: block;
