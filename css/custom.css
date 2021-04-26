@@ -29,6 +29,11 @@ p {
   margin-bottom: 1em;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 /* -------------------- HEADINGS -------------------- */
 h1,
 h2,
@@ -37,7 +42,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-weight: 500;
+  text-align: center;
 }
 
 .page-title h1,
@@ -45,20 +50,46 @@ h6 {
 .title {
   font-size: 60px;
   font-weight: 700;
-  text-align: center;
   line-height: 1.25;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-h2 {
+h2 p {
   font-size: 48px;
+  font-weight: 500;
+  color: #c4e601;
+  line-height: 1;
+  text-align: center;
+  max-width: 48rem;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.countdown-text {
   text-align: center;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
+/* HOMEPAGE LOGO */
+.logo-container {
+  position: relative;
+  text-align: center;
+  color: #c4e601;
+}
+
+.logo-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* -------  HEADER ------- */
@@ -70,8 +101,6 @@ img {
 .site-title {
   font-family: "Wide Latin";
   font-size: 48px;
-  color: red;
-  text-decoration: none !important;
   text-align: center;
   text-transform: uppercase;
 }
@@ -254,12 +283,19 @@ a:active {
 
 /* DONATE */
 
-.donate {
-  background-color: #a1e1e6;
+.button-block-button {
   border: none;
   width: 300px;
   height: 150px;
   text-align: center;
+}
+
+.green-block {
+  background-color: #c4e601;
+}
+
+.blue-block {
+  background-color: #a1e1e6;
 }
 
 /* date */
