@@ -3,8 +3,11 @@
   src: url(/css/Wide-Latin-Regular.ttf);
 }
 
+/* -------------------- GENERAL -------------------- */
+
 body {
   font-family: "Rubik", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   color: #4b586a;
@@ -16,15 +19,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  clear: both;
+  max-width: 1440px;
 }
 
 p {
@@ -34,11 +29,26 @@ p {
   margin-bottom: 1em;
 }
 
-.page-title,
-.entry-header h1 {
+/* -------------------- HEADINGS -------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: 500;
+}
+
+.page-title h1,
+.entry-header h1,
+.title {
   font-size: 60px;
+  font-weight: 700;
   text-align: center;
-  padding-bottom: 36px;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -66,15 +76,49 @@ img {
   text-transform: uppercase;
 }
 
-/* -------  FOOTER ------- */
+/* -------------------- FOOTER  -------------------- */
 
 .site-footer {
   background-color: #c4e601;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.social-links img {
-  max-width: 40px;
+.footer-grid {
+  max-width: 1440px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.footer-social-media a {
+  transition: opacity 0.2s ease;
+}
+
+.footer-social-media a:hover {
+  opacity: 1;
+}
+
+.footer-social-media a {
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.25;
+}
+.footer-copyright {
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.icon {
+  max-width: 48px;
   height: auto;
+  padding-right: 16px;
 }
 
 /* -------  NAV ------- */
@@ -116,7 +160,6 @@ a:active {
   display: none;
   list-style: none;
   margin: 0;
-  padding-left: 0;
 }
 
 .main-navigation ul ul {
@@ -171,6 +214,16 @@ a:active {
   .main-navigation ul {
     display: flex;
   }
+
+  /* .menu-menu-container {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+
+.menu-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .site-main .comment-navigation,
@@ -206,4 +259,47 @@ a:active {
   width: 300px;
   height: 150px;
   text-align: center;
+}
+
+/* date */
+.updated {
+  display: none;
+}
+
+/* -------------------- CUSTOM FIELDS -------------------- */
+
+.video-audio {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #4b586a;
+}
+
+.video-audio iframe,
+.video-audio object,
+.video-audio embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+/* Small and Not Small - portrait tablet and landscape phone*/
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .footer-grid {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+  .video-audio {
+    max-height: auto;
+  }
 }
