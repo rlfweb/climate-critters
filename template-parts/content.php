@@ -23,7 +23,6 @@
 			<div class="entry-meta">
 				<?php
 				climate_critters_posted_on();
-				climate_critters_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -57,7 +56,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php climate_critters_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
