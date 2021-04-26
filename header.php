@@ -29,22 +29,15 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'climate-critters' ); ?></a>
 
 	<header id="masthead" class="site-header container">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-		?>
+		<div class="site-title">
+		<div> 
+			<a href="<?php echo get_site_url(); ?>">
+						<div class="logo lh-title pv3 ph1">CLIMATE<br>CRITTERS</div>
+			</a>
+		</div>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation flex-l justify-center tc lh-solid">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'climate-critters' ); ?></button>
 			<?php
 			wp_nav_menu(
