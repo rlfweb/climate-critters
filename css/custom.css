@@ -375,6 +375,42 @@ button {
   height: 100%;
 }
 
+/* -------------------- ACF REPEATER FIELDS - LEFT/RIGHT FLOAT -------------------- */
+
+.content-area {
+  width: 100%;
+  padding: 80px 0;
+  min-height: 40px;
+  overflow: hidden;
+}
+.content-area:nth-of-type(odd) {
+}
+.holder {
+  width: 84%;
+  margin: 0 auto;
+  min-height: 40px;
+  overflow: hidden;
+}
+
+.half {
+  width: 46%;
+  min-height: 40px;
+  overflow: hidden;
+}
+.half:nth-of-type(odd) {
+  float: left;
+}
+.half:nth-of-type(even) {
+  float: right;
+}
+
+#section:nth-of-type(odd) #halfimg {
+  float: right !important;
+}
+#section:nth-of-type(odd) #halftext {
+  float: left !important;
+}
+
 /* -------------------- MEDIA QUERIES -------------------- */
 
 /* Medium -  screens between 768px and 1024px - small laptop */
