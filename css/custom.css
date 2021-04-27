@@ -29,6 +29,11 @@ p {
   margin-bottom: 1em;
 }
 
+/* -------------------- IMAGES -------------------- */
+.archive-thumbnail {
+  max-width: 420px;
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -83,6 +88,7 @@ h4 {
   position: relative;
   text-align: center;
   color: #c4e601;
+  line-height: 1;
 }
 
 .logo-centered {
@@ -90,6 +96,13 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@supports (-webkit-text-stroke: 2px #1cc314) {
+  .logo-text {
+    -webkit-text-stroke: 2px #1cc314;
+    -webkit-text-fill-color: #c4e601;
+  }
 }
 
 /* -------  HEADER ------- */
@@ -281,7 +294,30 @@ a:active {
   flex: 1 0 50%;
 }
 
-/* DONATE */
+/* -------------------- RESEARCH PUBLICATIONS NEWS ARCHIVE PAGES GRID  -------------------- */
+
+.archive-grid {
+  max-width: 960px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.archive-thumbnail {
+  max-width: 420px;
+  justify-self: start;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-title {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+/* -------------------- DONATE SHARE BUTTON BLOCKS  -------------------- */
 
 .button-block-button {
   font-weight: 500;
