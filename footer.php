@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer container">
 	
 	<div>
-		<h1 class="b">Climate Critters - working together to change the world</h1>
+		<h1 class="cc-footer-tagline">Climate Critters - working together to change the world</h1>
 		</div>
 
 		<div class="footer-grid">

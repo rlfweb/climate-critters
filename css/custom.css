@@ -8,7 +8,7 @@
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #4b586a;
 }
@@ -18,7 +18,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   max-width: 1440px;
 }
 
@@ -39,6 +40,11 @@ img {
   max-width: 100%;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /* -------------------- HEADINGS -------------------- */
 h1,
 h2,
@@ -47,36 +53,63 @@ h4,
 h5,
 h6 {
   clear: both;
+}
+
+.page-title,
+.entry-header,
+.entry-title,
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.page-title h1,
-.entry-header h1,
-.title {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
+h2,
 h2 p {
-  font-size: 48px;
+  font-size: 2.25rem;
   font-weight: 500;
   color: #c4e601;
   line-height: 1;
   text-align: center;
   max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
-h3 {
-  font-size: 36px;
+h3,
+.entry-title h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+h4,
+.image-caption {
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
-h4 {
+.image-description p {
+  max-width: 300px;
+}
+
+.cc-footer-tagline {
+  padding-top: 2rem;
+}
+
+.critter-title,
+.image-title {
+  font-weight: 500;
   font-size: 24px;
-  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .countdown-text {
@@ -123,6 +156,7 @@ h4 {
 .site-footer {
   background-color: #c4e601;
   margin-top: 4rem;
+  padding-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -147,7 +181,6 @@ h4 {
 }
 
 .footer-social-media a {
-  font-size: 1rem;
   line-height: 1;
   opacity: 0.25;
 }
@@ -294,27 +327,35 @@ a:active {
   flex: 1 0 50%;
 }
 
-/* -------------------- RESEARCH PUBLICATIONS NEWS ARCHIVE PAGES GRID  -------------------- */
+/* -------------------- UPDATES ARCHIVE PAGE GRID  -------------------- */
 
 .archive-grid {
   max-width: 960px;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 3rem;
 }
 
 .archive-thumbnail {
   max-width: 420px;
-  justify-self: start;
   margin: 0;
   padding: 0;
 }
 
-.archive-title {
+.post-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  margin-bottom: 1rem;
+}
+
+.post-content {
   margin-bottom: 2rem;
-  padding: 0;
 }
 
 /* -------------------- DONATE SHARE BUTTON BLOCKS  -------------------- */
@@ -375,11 +416,16 @@ button {
   height: 100%;
 }
 
+.text-block p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* -------------------- ACF REPEATER FIELDS - LEFT/RIGHT FLOAT -------------------- */
 
 .content-area {
   width: 100%;
-  padding: 80px 0;
+  padding: 1rem 0;
   min-height: 40px;
   overflow: hidden;
 }
@@ -409,6 +455,12 @@ button {
 }
 #section:nth-of-type(odd) #halftext {
   float: left !important;
+  text-align: right;
+}
+
+#section:nth-of-type(even) #halftext {
+  float: left !important;
+  text-align: left;
 }
 
 /* -------------------- MEDIA QUERIES -------------------- */
