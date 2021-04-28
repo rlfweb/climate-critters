@@ -29,13 +29,12 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'climate-critters' ); ?></a>
 
 	<header id="masthead" class="site-header container">
+
 		<div class="site-title">
-		<div> 
 			<a href="<?php echo get_site_url(); ?>">
 						<div class="logo lh-title pv3 ph1">CLIMATE<br>CRITTERS</div>
 			</a>
-		</div>
-		</div><!-- .site-branding -->
+		</div><!-- .site-title -->
 
 		<nav id="site-navigation" class="main-navigation flex-l justify-center tc lh-solid">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'climate-critters' ); ?></button>
@@ -48,4 +47,5 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
