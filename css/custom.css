@@ -1,7 +1,18 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
 @font-face {
   font-family: "Wide Latin", serif;
-  src: url(/css/Wide-Latin-Regular.ttf);
+  src: url("Nexus_Font.eot?") format("eot"),
+    url("Nexus_Font.woff") format("woff"),
+    url("Nexus_Font.ttf") format("truetype"),
+    url("Nexus_Font.svg#LatinWide") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+
+/* @font-face {
+  font-family: "Wide Latin", serif;
+  src: url(/css/Wide-Latin-Regular.ttf);
+} */
 
 /* -------------------- GENERAL -------------------- */
 
@@ -506,6 +517,9 @@ button {
   .archive-content {
     justify-content: left;
   }
+  .half {
+    width: 84%;
+  }
 }
 
 /* Small -  screens below 480px portrait phone*/
@@ -568,5 +582,8 @@ button {
   }
   .archive-content {
     justify-content: center;
+  }
+  .half {
+    width: 84%;
   }
 }
