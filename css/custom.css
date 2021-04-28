@@ -40,11 +40,6 @@ img {
   max-width: 100%;
 }
 
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
 /* -------------------- HEADINGS -------------------- */
 h1,
 h2,
@@ -58,7 +53,8 @@ h6 {
 .page-title,
 .entry-header,
 .entry-title,
-h1 {
+h1,
+.welcome {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.25;
@@ -96,10 +92,6 @@ h4,
   font-weight: 500;
 }
 
-.image-description p {
-  max-width: 300px;
-}
-
 .cc-footer-tagline {
   padding-top: 2rem;
 }
@@ -116,6 +108,9 @@ h4,
   text-align: center;
 }
 
+.welcome {
+  font-size: ;
+}
 /* HOMEPAGE LOGO */
 .logo-container {
   position: relative;
@@ -360,6 +355,12 @@ a:active {
 
 /* -------------------- DONATE SHARE BUTTON BLOCKS  -------------------- */
 
+.button-block {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button-block-button {
   font-weight: 500;
   border: none;
@@ -417,7 +418,6 @@ button {
 }
 
 .text-block p {
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -498,5 +498,39 @@ button {
   }
   .site-title {
     font-size: 24px;
+  }
+  .responsive-images {
+    width: 100%;
+    height: auto;
+  }
+  .page-title,
+  .entry-header,
+  .entry-title,
+  h1,
+  .welcome {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h2,
+  h2 p {
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  h3,
+  .entry-title h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  h4,
+  .image-caption {
+    font-size: 1rem;
   }
 }
