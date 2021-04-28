@@ -39,14 +39,14 @@ while ( have_posts() ) :
 <div class="archive-grid">
 
 <!-- image on the left -->
-	<div class="archive-thumbnail mb4 pl3">
+	<div class="archive-thumbnail mb4 ph3">
 		<?php if ( has_post_thumbnail()) : ?>
 			<?php the_post_thumbnail(); ?>
 		<?php endif; ?>
 	</div><!-- #archive-thumbnail -->
 
 <!-- title and posted date on the right -->
-	<div class="archive-content pr3">
+	<div class="archive-content ph3">
 			<h3 class="post-title tl mb0"> <?php the_title(); ?> </h3>
 			<p class="post-date tl f6"> Posted on <?php the_date( ); ?> </p>
 			<p class="post-content tl f6"> <?php the_content(); ?> </p>
