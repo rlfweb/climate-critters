@@ -162,10 +162,7 @@ h4,
 }
 
 .site-title {
-  font-family: "Wide Latin";
-  font-size: 48px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 /* -------------------- FOOTER  -------------------- */
@@ -506,9 +503,6 @@ button {
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
   }
-  .site-title {
-    font-size: 36px;
-  }
   .home-critters {
     display: none;
   }
@@ -537,9 +531,6 @@ button {
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
-  }
-  .site-title {
-    font-size: 24px;
   }
   .responsive-images {
     width: 100%;

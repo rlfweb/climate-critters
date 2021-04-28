@@ -54,7 +54,6 @@ if ( $query->have_posts() ):
 
 	<div class="logo-container">
 		<img src="/wp-content/themes/climate-critters/images/ClimateCrittersLogo.png" alt="Climate Critters logo" class="responsive-images">
-		<!-- <div class="logo-centered f3 f2-ns f1-m f-headline-l site-title logo-text">Climate<br>Critters</div> -->
 	</div> 
 	
 	<div class="home-critters">

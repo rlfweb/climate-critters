@@ -32,10 +32,13 @@
 
 		<div class="site-title">
 			<a href="<?php echo get_site_url(); ?>">
-						<div class="logo lh-title pv3 ph1">CLIMATE<br>CRITTERS</div>
+						<div class="logo pv3 ph1">
+						<img src="http://climate-critters.local/wp-content/uploads/ClimateCritters-site-title.png" alt="Climate Critters logo" class="responsive-images">
+						</div>
 			</a>
 		</div><!-- .site-title -->
 
+		
 		<nav id="site-navigation" class="main-navigation flex-l justify-center tc lh-solid">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'climate-critters' ); ?></button>
 			<?php
