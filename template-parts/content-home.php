@@ -47,17 +47,17 @@ if ( $query->have_posts() ):
 <!-- IMAGE BLOCK -->
 <div class="items-center pt4 flex flex-column">
 
-	<div>
+	<div class="home-critters">
 		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-bird.png" alt="Dr Isabella Barbini" width="300" class="responsive-images"></span>
 		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-ant.png" alt="Juan Antonio" width="300" class="responsive-images"></span>
 	</div>
 
 	<div class="logo-container">
-		<img src="/wp-content/themes/climate-critters/images/ClimateCritters-Logo-disc.png" alt="Climate Critters logo" width="600" class="responsive-images">
-		<div class="logo-centered f3 f2-ns f1-m f-headline-l site-title logo-text">Climate<br>Critters</div>
-	</div>
+		<img src="/wp-content/themes/climate-critters/images/ClimateCrittersLogo.png" alt="Climate Critters logo" class="responsive-images">
+		<!-- <div class="logo-centered f3 f2-ns f1-m f-headline-l site-title logo-text">Climate<br>Critters</div> -->
+	</div> 
 	
-	<div>
+	<div class="home-critters">
 		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-bear.png" alt="Cosmo the Bear" width="300" class="responsive-images"></span>
 		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-apple.png" alt="Pippa Cox" width="300" class="responsive-images"></span>
 		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-tree.png" alt="Elmer Arbour" width="300" class="responsive-images"></span>
@@ -90,8 +90,8 @@ endif;
 <h1 class="f2 b pv3">Join us now!</h1>
 
 <!-- BUTTON BLOCK -->
-<div class="button-block flex flex-column flex-column-ns flex-column-m flex-row-l justify-around-l">
-	<div class="button-block-button green-block ph3 ma3">
+<div class="button-block flex flex-column flex-column-ns flex-column-m flex-row-l items-center justify-around-l">
+	<div class="button-block-button green-block ph3 ma2 ma3-ns ma3-m ma3-l">
 		<h1>Follow us</h1>
 		<div class="social-links">
 					<a href="https://www.facebook.com/ClimateCritters/" target="_blank" >
@@ -108,7 +108,7 @@ endif;
 					</a>
 					</div>
 	</div>
-	<div class="button-block-button blue-block ph3 ma3">
+	<div class="button-block-button blue-block ph3 ma2 ma3-ns ma3-m ma3-l">
 		<h1>Donate to our cause</h1>
 	</div>
 </div>
