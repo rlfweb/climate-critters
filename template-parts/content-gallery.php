@@ -30,7 +30,7 @@
 
 
 <!-- DESCRIPTION -->
-<p class="image-description"><?php echo $image['description']; ?> </p>
+<p class="image-description measure mh0"><?php echo $image['description']; ?> </p>
 
 
     </div> <!-- .gallery-image --> 

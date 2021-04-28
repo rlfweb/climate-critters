@@ -13,7 +13,7 @@
 
 <header class="entry-header">
 
-<h1>Welcome!</h1>
+<h1 class="welcome">Welcome!</h1>
 
 <!-- SUBHEADING TEXT -->
 <?php 
@@ -54,7 +54,7 @@ if ( $query->have_posts() ):
 
 	<div class="logo-container">
 		<img src="/wp-content/themes/climate-critters/images/ClimateCritters-Logo-disc.png" alt="Climate Critters logo" width="600" class="responsive-images">
-		<div class="logo-centered f-headline site-title logo-text">Climate<br>Critters</div>
+		<div class="logo-centered f3 f2-ns f1-m f-headline-l site-title logo-text">Climate<br>Critters</div>
 	</div>
 	
 	<div>
@@ -76,10 +76,8 @@ if ( $query->have_posts() ):
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <!-- Home Statement -->
-<div class="statement" id="statement">	
-		<div class="home-statement pv4 tc f3">
+		<div class="home-statement lh-copy pv5 tc f3">
 			<?php the_content(); ?>
-		</div>
 	</div>	
 
 <?php 
@@ -92,8 +90,8 @@ endif;
 <h1 class="f2 b pv3">Join us now!</h1>
 
 <!-- BUTTON BLOCK -->
-<div class="button-block flex flex-row justify-around">
-	<div class="button-block-button green-block ph3">
+<div class="button-block flex flex-column flex-column-ns flex-column-m flex-row-l justify-around-l">
+	<div class="button-block-button green-block ph3 ma3">
 		<h1>Follow us</h1>
 		<div class="social-links">
 					<a href="https://www.facebook.com/ClimateCritters/" target="_blank" >
@@ -110,17 +108,17 @@ endif;
 					</a>
 					</div>
 	</div>
-	<div class="button-block-button blue-block ph3">
+	<div class="button-block-button blue-block ph3 ma3">
 		<h1>Donate to our cause</h1>
 	</div>
 </div>
 <!-- END BUTTON BLOCK -->
 
-<h1 class="f1 mv5">It's time to make your voices heard!</h1>
+<h1 class="mv5">It's time to make your voices heard!</h1>
 
 
-<h1 class="f2 b mb0">COP26 2021 UN Climate Change Conference</h1>
-<h1 class="f2 b mv0">1–12 November 2021 </h1>
+<h1 class="conference mb0">COP26 2021 UN Climate Change Conference</h1>
+<h3 class="conference mv0">1–12 November 2021 </h3>
 
 <!-- Countdown -->
 <?php echo do_shortcode('[wpcdt-countdown id="50"]'); ?>
