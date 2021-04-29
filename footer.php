@@ -11,22 +11,35 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer container">
+	<footer id="colophon" class="site-footer ph4-m ph4-l container">
 	
 	<div>
-		<h1 class="cc-footer-tagline">Climate Critters - working together to change the world</h1>
+		<p class="cc-footer-tagline f3 f3-ns f2-m f2-l ">Climate Critters - working together to change the&nbsp;world</p>
 		</div>
 
 		<div class="footer-grid">
 
 			<div class="footer-left">
-				<p>Subscribe to our newsletter for all the latest news.</p>
-				<button>Sign up now</button>
+				<p class="ma0">Subscribe to our newsletter for all the latest&nbsp;news</p>
+
+				<div id="mc_embed_signup">
+<form action="https://climatecritters.us1.list-manage.com/subscribe/post?u=3e12933f424bc396092f85eb3&amp;id=c692e23926" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e12933f424bc396092f85eb3_c692e23926" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
 			</div><!-- #footer-left -->
 
 			<div class="footer-middle">
 				<div>
-					<p>Telephone: +44 (0)1327 261631</p>
+					<p>Telephone: +44&nbsp;(0)1327&nbsp;261631</p>
 					<p>info@climatecritters.co.uk</p>
 				</div>
 				<div class="social-links">

@@ -24,7 +24,7 @@ p {
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   color: #4b586a;
 }
@@ -115,6 +115,9 @@ h4,
 
 .cc-footer-tagline {
   padding-top: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .critter-title,
@@ -131,6 +134,12 @@ h4,
 
 .welcome {
   font-size: ;
+}
+
+.blue-text {
+  color: #4b586a;
+  font-size: 32px;
+  line-height: 1.25;
 }
 
 /* HOMEPAGE LOGO */
@@ -182,7 +191,7 @@ h4,
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-column-gap: 2rem;
   justify-items: center;
 }
 
@@ -438,6 +447,7 @@ button {
 }
 
 .text-block p {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -483,6 +493,41 @@ button {
   text-align: left;
 }
 
+/* -------------------- MAILCHIMP FORM -------------------- */
+
+
+#mc_embed_signup {
+  clear: left;
+  width: 100%;
+  margin-top: 0.825rem;
+  margin-bottom: 2rem;
+}
+
+#mc_embed_signup input.email {
+  font-size: 1rem;
+  color: #4b586a;
+  border: none;
+  max-width: 268px;
+  margin-bottom: 0.825rem;
+}
+
+#mc_embed_signup .button {
+  background-color: #4b586a;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  max-width: 100px;
+  border-radius: 5%;
+  margin-left: 6px;
+  margin-left: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #4b586a;
+  color: #fff;
+}
 /* -------------------- MEDIA QUERIES -------------------- */
 
 /* Medium -  screens between 768px and 1024px - small laptop */
@@ -492,8 +537,8 @@ button {
   }
 }
 
-/* Not Small -  screens between 480px and 768px - portrait tablet and landscape phone*/
-@media only screen and (min-width: 30em) and (max-width: 48em) {
+/* Just for footer grid -  screens between 0px and 864px*/
+@media only screen and (min-width: 0em) and (max-width: 54em) {
   .footer-grid {
     max-width: 300px;
     margin-left: auto;
@@ -503,6 +548,10 @@ button {
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
   }
+
+/* Not Small -  screens between 480px and 768px - portrait tablet and landscape phone*/
+@media only screen and (min-width: 30em) and (max-width: 48em) {
+ 
   .home-critters {
     display: none;
   }
@@ -523,15 +572,7 @@ button {
 
 /* Small -  screens below 480px portrait phone*/
 @media only screen and (min-width: 0px) and (max-width: 30em) {
-  .footer-grid {
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    grid-template-columns: 1fr;
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
-  }
+ 
   .responsive-images {
     width: 100%;
     height: auto;

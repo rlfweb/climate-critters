@@ -20,6 +20,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,400;1,700&display=swap" rel="stylesheet">
 
 
+
+<!-- Mailchimp Newsletter Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
+
 	<?php wp_head(); ?>
 </head>
 
@@ -32,8 +37,8 @@
 
 		<div class="site-title">
 			<a href="<?php echo get_site_url(); ?>">
-						<div class="logo pv3 ph1">
-						<img src="http://climate-critters.local/wp-content/uploads/ClimateCritters-site-title.png" alt="Climate Critters logo" class="responsive-images">
+						<div class="logo pt4 pb3 ph1">
+						<img src="/wp-content/uploads/ClimateCritters-site-title.png" alt="Climate Critters logo" class="responsive-images">
 						</div>
 			</a>
 		</div><!-- .site-title -->
