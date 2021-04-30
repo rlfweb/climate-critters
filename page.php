@@ -55,20 +55,9 @@ if( get_row_layout() == 'text' ): ?>
 endwhile; endif; ?>
 
 <!-- ACF REPEATER FIELDS CONTENT -->
-
-<?php if( have_rows('repeater_fields') ): ?>
-<?php while ( have_rows('repeater_fields') ) : the_row(); ?>
-<div id="section" class="content-area">
-	<div class="holder">
-		<div id="halfimg" class="half">
-			<img src="<?php the_sub_field('repeater-image'); ?>">
-		</div>
-		<div id="halftext" class="half">
-			<p class="critter-title db"><?php the_sub_field('repeater-title'); ?></p>
-			<p class="db"><?php the_sub_field('repeater-text'); ?></p>
-		</div>
-	</div>
-</div>
+<!-- if we have repeater fields, loop through them -->
+<?php if( have_rows('repeater_fields') ): while ( have_rows('repeater_fields') ) : the_row(); ?>
+<?php get_template_part( 'template-parts/content-repeater' ); ?>
 <?php endwhile; ?>        
 <?php else : endif; ?>
 

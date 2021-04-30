@@ -462,7 +462,7 @@ button {
 .content-area:nth-of-type(odd) {
 }
 .holder {
-  width: 84%;
+  width: 100%;
   margin: 0 auto;
   min-height: 40px;
   overflow: hidden;
@@ -573,6 +573,11 @@ button {
 /* Small -  screens below 480px portrait phone*/
 @media only screen and (min-width: 0px) and (max-width: 30em) {
  
+  #halftext p {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 18px;
+  }
   .responsive-images {
     width: 100%;
     height: auto;
