@@ -108,9 +108,13 @@ endif;
 					</div>
 	</div>
 	<div class="button-block-button blue-block mt4 mt4-ns mt4-m mt2-l mh3-l">
-		<p class="blue-text mv3">Donate to<br>our cause</p>
+		<a class="dbox-donation-button blue-text mv3" href="https://donorbox.org/climate-critters?default_interval=o">Donate to<br>our cause</a>
 	</div>
 </div>
+
+
+
+
 <!-- END BUTTON BLOCK -->
 
 <h1 class="f3 f2-l mv5">It's time to make your voices&nbsp;heard!</h1>

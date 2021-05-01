@@ -19,7 +19,9 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,400;1,700&display=swap" rel="stylesheet">
 
+	<!-- Donorbox popup -->
 
+<script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
 
 <!-- Mailchimp Newsletter Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
