@@ -493,20 +493,21 @@ button {
 }
 .half:nth-of-type(odd) {
   float: left;
+  
 }
 .half:nth-of-type(even) {
   float: right;
 }
 
-#section:nth-of-type(odd) #halfimg {
+.repeater:nth-of-type(odd) .halfimg {
   float: right !important;
 }
-#section:nth-of-type(odd) #halftext {
+.repeater:nth-of-type(odd) .halftext {
   float: left !important;
   text-align: right;
 }
 
-#section:nth-of-type(even) #halftext {
+.repeater:nth-of-type(even) .halftext {
   float: left !important;
   text-align: left;
 }
