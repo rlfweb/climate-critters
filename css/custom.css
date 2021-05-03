@@ -420,10 +420,6 @@ a:active {
   border-radius: 3%;
 }
 
-#sharing_buttons {
-  display: none;
-}
-
 /* -------------------- date -------------------- */
 .updated {
   display: none;
@@ -445,7 +441,7 @@ button {
 
 /* -------------------- CUSTOM FIELDS -------------------- */
 
-.video-audio {
+.video {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
@@ -454,9 +450,9 @@ button {
   border: 1px solid #4b586a;
 }
 
-.video-audio iframe,
-.video-audio object,
-.video-audio embed {
+.video iframe,
+.video object,
+.video embed {
   position: absolute;
   top: 0;
   left: 0;

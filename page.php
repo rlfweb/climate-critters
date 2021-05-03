@@ -39,9 +39,13 @@ if( get_row_layout() == 'text' ): ?>
 <?php elseif (get_row_layout() == 'gallery' ): ?>
 	<?php get_template_part( 'template-parts/content-gallery' ); ?>
 
-		<!-- if it’s a video or audio component, show us them -->
-		<?php elseif( get_row_layout() == 'video-audio' ): ?>
+		<!-- if it’s a video component, show us them -->
+		<?php elseif( get_row_layout() == 'video' ): ?>
 			<?php get_template_part( 'template-parts/content-video' ); ?>
+
+		<!-- if it’s an audio component, show us them -->
+		<?php elseif( get_row_layout() == 'audio' ): ?>
+			<?php get_template_part( 'template-parts/content-audio' ); ?>
 
 			<!-- if it’s a donate component, show it -->
 		<?php elseif( get_row_layout() == 'donate' ): ?>
