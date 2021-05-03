@@ -1,6 +1,6 @@
 <div id="section" class="content-area">
 	<div class="holder">
-		<div id="halfimg" class="half">
+		<div id="halfimg" class="half<?php the_field('image_width', $image['id']); ?>">
 			<img src="<?php the_sub_field('repeater-image'); ?>">
     </div>
 		<div id="halftext" class="half">
