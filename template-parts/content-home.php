@@ -48,18 +48,18 @@ if ( $query->have_posts() ):
 <div class="items-center flex flex-column">
 
 	<div class="home-critters">
-		<span class=""><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-bird.png" alt="Dr Isabella Barbini" width="300" class="responsive-images"></span>
-		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-ant.png" alt="Juan Antonio" width="300" class="responsive-images"></span>
+		<span class=""><img src="/wp-content/uploads/ClimateCritters-Headshot-bird.png" alt="Dr Isabella Barbini" width="300" class="responsive-images"></span>
+		<span class="ph3"><img src="/wp-content/uploads/ClimateCritters-Headshot-ant.png" alt="Juan Antonio" width="300" class="responsive-images"></span>
 	</div>
 
 	<div class="logo-container">
-		<img src="/wp-content/themes/climate-critters/images/ClimateCrittersLogo.png" alt="Climate Critters logo" class="responsive-images">
+		<img src="/wp-content/uploads/ClimateCrittersLogo.png" alt="Climate Critters logo" class="responsive-images">
 	</div> 
 	
 	<div class="home-critters">
-		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-bear.png" alt="Cosmo the Bear" width="300" class="responsive-images"></span>
-		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-apple.png" alt="Pippa Cox" width="300" class="responsive-images"></span>
-		<span class="ph3"><img src="/wp-content/themes/climate-critters/images/ClimateCritters-Headshot-tree.png" alt="Elmer Arbour" width="300" class="responsive-images"></span>
+		<span class="ph3"><img src="/wp-content/uploads/ClimateCritters-Headshots-bear.png" alt="Cosmo the Bear" width="300" class="responsive-images"></span>
+		<span class="ph3"><img src="/wp-content/uploads/ClimateCritters-Headshot-apple.png" alt="Pippa Cox" width="300" class="responsive-images"></span>
+		<span class="ph3"><img src="/wp-content/uploads/ClimateCritters-Headshot-tree.png" alt="Elmer Arbour" width="300" class="responsive-images"></span>
 	</div>
 
 </div>
