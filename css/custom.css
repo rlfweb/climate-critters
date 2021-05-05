@@ -507,12 +507,19 @@ button {
 .repeater:nth-of-type(odd) .halftext {
   float: left !important;
   text-align: right;
+  padding-right: 48px;
 }
 
 .repeater:nth-of-type(even) .halftext {
   float: left !important;
   text-align: left;
+  padding-left: 48px;
 }
+
+.repeater:nth-of-type(even) .halfimg {
+  float: left !important;
+}
+
 
 /* -------------------- MAILCHIMP FORM -------------------- */
 
@@ -596,7 +603,7 @@ button {
 /* Small -  screens below 480px portrait phone*/
 @media only screen and (min-width: 0px) and (max-width: 30em) {
  
-  #halftext p {
+  .halftext p {
     margin-left: 0;
     margin-right: 0;
     font-size: 18px;
@@ -650,5 +657,12 @@ button {
   }
   .half {
     width: 84%;
+  }
+  .repeater:nth-of-type(odd) .halftext {
+    padding-right: 0;
+  }
+  
+  .repeater:nth-of-type(even) .halftext {
+    padding-left: 0;
   }
 }
